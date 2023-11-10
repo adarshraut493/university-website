@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Contact US </h1>
+    </section>
+
+
+
+    <!-- contact us  -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1B1lAsUpYFg82Je7XN1_cxRPf1UU&hl=en_US&ehbc=2E312F"
+            width="640" height="480"></iframe>
+    </section>
+
+
+    <section class="contact-us">
+
+
+        <div class="row">
+            <div class="contact-col">
+               <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ Road , ABC Building</h5>
+                    <p>Bangalore , Karnataka, IN</p>
+                </span>
+               </div>
+               <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 012345689</h5>
+                    <p>Monday to Saturday , 10AM to 6PM</p>
+                </span>
+               </div>
+               <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@easytutorialspro.com</h5>
+                    <p>email us your query</p>
+                </span>
+               </div>
+               
+            </div>
+            <div class="contact-col">
+
+            <form action="form_handler.php" method="POST">
+                <input type="text"  name="name" placeholder="Enter your name" required>
+                <input type="email" name="email"placeholder="Enter your email" required>
+                <input type="text" name="subject"placeholder="Enter your subject" required>
+                <textarea  rows="8" name="message"placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn red-btn"> send message</button>
+            </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer  -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel ratione quaerat blanditiis rerum soluta facere
+            aliquid aperiam fuga dolor minima corporis vitae debitis <br>eligendi, pariatur nemo cupiditate, natus fugit
+            repellendus consequuntur libero enim possimus!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i> by easy tutorials </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+
+
+    </script>
+</body>
+
+</html>
